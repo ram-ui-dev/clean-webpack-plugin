@@ -752,6 +752,8 @@ describe('cleanOnceBeforeBuildPatterns option', () => {
             cleanOnceBeforeBuildPatterns: [
                 path.join(sandbox.dir, 'build/**/*'),
             ],
+            dangerouslyAllowCleanPatternsOutsideProject: true,
+            dry: false,
         });
 
         const compiler = webpack({
@@ -925,6 +927,8 @@ describe('cleanAfterEveryBuildPatterns option', () => {
             cleanAfterEveryBuildPatterns: [
                 path.join(sandbox.dir, 'build/**/*'),
             ],
+            dangerouslyAllowCleanPatternsOutsideProject: true,
+            dry: false,
         });
 
         const compiler = webpack({
