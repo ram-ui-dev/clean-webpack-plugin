@@ -78,7 +78,7 @@ module.exports = (wallabyInitial) => {
             process.chdir(wallabySetup.projectCacheDir);
 
             process.env.NODE_ENV = 'test';
-            const jestConfig = require('./jest.config.js');
+            const jestConfig = require('./jest.config');
             wallabySetup.testFramework.configure(jestConfig);
         },
     };
